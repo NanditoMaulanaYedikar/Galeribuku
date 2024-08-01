@@ -1,0 +1,1408 @@
+:root {
+  --primary: #ffffff;
+}
+
+/* ------------------
+        ALL
+--------------------*/
+header {
+  height: 55px;
+  display: flex;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: rgba(0, 0, 0, 1);
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  z-index: 9999999;
+  transition: background-color 0.3s, height 0.3s; /* Menambahkan transisi pada height */
+}
+
+.scrolled {
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+header .container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+
+header .container .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 40px;
+  width: fit-content;
+  height: 80%;
+  margin-left: 12%;
+}
+
+header .container .logo img {
+  width: 45px;
+  border-radius: 50%;
+}
+
+header .container .desk {
+  display: flex;
+  width: 35%;
+  margin-right: auto;
+  height: 55px;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+header .container .desk li {
+  width: fit-content;
+  display: flex;
+  height: 100%;
+  width: fit-content;
+  padding: 0px 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: "DIN Pro";
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+header .container .desc a {
+  font-family: "DIN Pro";
+  font-size: 14px;
+}
+header .container .desk li i {
+  margin-left: 8px;
+}
+
+header .container .desk li a {
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  text-decoration: none;
+  color: var(--primary);
+  font-size: 12px;
+}
+
+header .container .ms {
+  position: absolute;
+  transform: translateY(-100%);
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  height: 70vh;
+  padding: 0px 0px 5vh 0px;
+  background-color: #b70d0f;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+header .container div.d {
+  transform: translateY(100%);
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+header .container .ms .container {
+  border-top: 1px solid rgba(200, 200, 200, 0.4);
+  width: 80%;
+  height: 90%;
+  padding: 20px 0px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+header .container .ms .container .section {
+  width: 80%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+header .container .ms .container .section h3 {
+  margin-bottom: 40px;
+  color: #ffffff;
+  font-family: "72 Black";
+}
+
+header .container .ms .container .section .listSection {
+  display: flex;
+  width: 100%;
+  height: 70%;
+  justify-content: space-between;
+  color: #ffffff;
+  align-items: start;
+  font-family: "72 Black";
+}
+header .container .ms .container .section .listSection ul {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+header .container .ms .container .section .listSection ul li {
+  width: 100%;
+  height: 14%;
+  background-color: transparent;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+header .container .ms .container .section .listSection ul li a {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+  background-color: transparent;
+  text-decoration: none;
+}
+
+header .container .ms .container .section .listSection .small {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  font-family: "72 Condensed";
+  margin-left: 50px;
+}
+header .container .ms .container .section .listSection .small .content {
+  height: 35%;
+  width: 100%;
+  display: flex;
+}
+header .container .ms .container .section .listSection .small .content .img {
+  width: 90px;
+  height: 90px;
+}
+header .container .ms .container .section .listSection .small .content h3 {
+  font-size: 14px;
+  margin-left: 10px;
+  width: 70%;
+  font-family: "72 Black";
+}
+header .container .ms .container .printEdition {
+  margin-left: 100px;
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+header .container .ms .container .printEdition h3 {
+  margin-bottom: 40px;
+  color: #ffffff;
+  font-family: "72 Black";
+}
+header .container .ms .container .printEdition .large {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: start;
+  align-items: start;
+}
+header .container .ms .container .printEdition .large .desc {
+  margin-left: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  color: #ffffff;
+  justify-content: start;
+}
+header .container .ms .container .printEdition .large .desc h3 {
+  margin: 15px 0px;
+}
+header .container .ms .container .printEdition .large .img {
+  width: 180px;
+  height: 280px;
+  background: none;
+}
+header .container .desk .mega ul li {
+  background-color: aliceblue;
+  width: 100%;
+  padding: 0;
+}
+header .container .desk .mega li {
+  font-family: "72 Black";
+}
+header .container .desk a {
+  font-family: "72 Black";
+}
+header .container .desk .mega ul li a {
+  color: black;
+}
+header .container .desk .mega:hover ul {
+  display: block;
+}
+
+header .container .toggle {
+  display: none;
+}
+header .container .reNav {
+  display: none;
+}
+header .container .akun {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 8%;
+  font-family: "72 Condensed";
+  letter-spacing: 1px;
+}
+header .container .akun a:first-child {
+  text-decoration: none;
+  color: var(--primary);
+  padding: 10px 25px;
+  font-size: 12px;
+}
+header .container .akun a:nth-child(2) {
+  color: var(--primary);
+  background-color: #e03a3c;
+  border-radius: 8px;
+  padding: 10px 25px;
+  text-decoration: none;
+}
+
+.nscroll {
+  height: 70px;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/*-------------------
+  TABLET - LAPTOP L 
+---------------------*/
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  header {
+    height: 55px;
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 9999999;
+    transition: 0.3s;
+  }
+
+  header .container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+
+  header .container .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    width: fit-content;
+    height: 80%;
+    margin-left: 15px;
+  }
+
+  header .container .logo img {
+    width: 45px;
+    border-radius: 50%;
+  }
+
+  header .container .desk {
+    display: none;
+    width: 35%;
+    height: 55px;
+    list-style: none;
+    justify-content: space-between;
+  }
+
+  header .container .desk li {
+    width: fit-content;
+    display: flex;
+    height: 100%;
+    width: fit-content;
+    padding: 0px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 12px;
+    font-family: "Poppins";
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  header .container .desk li i {
+    margin-left: 8px;
+  }
+
+  header .container .desk li a {
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 12px;
+  }
+
+  header .container .desk .mega .ms {
+    position: absolute;
+    transform: translateY(-100%);
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    height: 70vh;
+    padding: 0px 0px 5vh 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+  header .container .desk .mega div.d {
+    transform: translateY(100%);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+  header .container .desk .mega .ms .container {
+    border-top: 1px solid rgba(200, 200, 200, 0.4);
+    width: 80%;
+    height: 90%;
+    padding: 20px 0px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+  header .container .desk .mega .ms .container .section {
+    width: 69%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  header .container .desk .mega .ms .container .section h3 {
+    margin-bottom: 40px;
+  }
+
+  header .container .desk .mega .ms .container .section .listSection {
+    display: flex;
+    width: 100%;
+    height: 70%;
+    justify-content: space-between;
+    align-items: start;
+  }
+  header .container .desk .mega .ms .container .section .listSection ul {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  header .container .desk .mega .ms .container .section .listSection ul li {
+    width: 100%;
+    height: 14%;
+    background-color: transparent;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  header .container .desk .mega .ms .container .section .listSection ul li a {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    background-color: transparent;
+  }
+  header .container .desk .mega .ms .container .section .listSection .small {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+  }
+  header
+    .container
+    .desk
+    .mega
+    .ms
+    .container
+    .section
+    .listSection
+    .small
+    .content {
+    height: 30%;
+    width: 100%;
+    display: flex;
+  }
+  header
+    .container
+    .desk
+    .mega
+    .ms
+    .container
+    .section
+    .listSection
+    .small
+    .content
+    .img {
+    width: 80px;
+    height: 80px;
+  }
+  header
+    .container
+    .desk
+    .mega
+    .ms
+    .container
+    .section
+    .listSection
+    .small
+    .content
+    h3 {
+    font-size: 14px;
+    margin-left: 10px;
+    width: 70%;
+    font-family: "72 Black";
+  }
+  header .container .desk .mega .ms .container .printEdition {
+    width: 29%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  header .container .desk .mega .ms .container .printEdition h3 {
+    margin-bottom: 40px;
+  }
+  header .container .desk .mega .ms .container .printEdition .large {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+  }
+  header .container .desk .mega .ms .container .printEdition .large .desc {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+  }
+  header .container .desk .mega .ms .container .printEdition .large .desc h3 {
+    margin: 15px 0px;
+  }
+  header .container .desk .mega .ms .container .printEdition .large .img {
+    width: 140px;
+    height: 240px;
+  }
+  header .container .desk .mega ul li {
+    background-color: aliceblue;
+    width: 100%;
+    padding: 0;
+  }
+  header .container .desk .mega ul li a {
+    color: black;
+  }
+  header .container .desk .mega:hover ul {
+    display: block;
+  }
+
+  header .container .toggle {
+    display: flex;
+    height: 40px;
+    width: 40px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+    margin-left: 30px;
+  }
+  header .container .reNav {
+    position: fixed;
+    height: calc(100vh - 55px);
+    width: 40%;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    transform: translateX(-100%);
+  }
+  header .container .reNav .container {
+    width: 80%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-family: "Poppins";
+    justify-content: start;
+  }
+  header .container .reNav .container ul {
+    margin-bottom: 20px;
+    display: flex;
+    width: 100%;
+    height: 30vh;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    list-style: none;
+  }
+  header .container .reNav .container ul h3 {
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 25px;
+  }
+  header .container .reNav .container ul li {
+    margin: 10px 20px 10px 0px;
+    padding: 10px 20px;
+    width: fit-content;
+  }
+  header .container .reNav .container ul li a {
+    color: #c1c1c1;
+    text-decoration: none;
+  }
+  header .container .reNav .container ul li a i {
+    margin-right: 10px;
+    width: fit-content;
+    height: fit-content;
+  }
+  header .container .toggle span {
+    display: block;
+    background-color: #ffffff;
+    width: 90%;
+    height: 4px;
+    border-radius: 3px;
+    transition: 0.3s;
+  }
+  header .container div.navRight {
+    transform: translateX(0);
+  }
+  header .container .toggle input {
+    position: absolute;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    z-index: 20;
+  }
+  header .container .toggle span:nth-child(2) {
+    transform-origin: 0 0;
+  }
+  header .container .toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+  }
+  header .container .toggle input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg) translate(4px, -6px);
+  }
+  header .container .toggle input:checked ~ span:nth-child(3) {
+    transform: scale(0);
+  }
+  header .container .toggle input:checked ~ span:nth-child(4) {
+    transform: rotate();
+    transform: rotate(-45deg) translate(4.5px, 5.5px);
+  }
+  header .container .akun {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    margin: 0;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  header .container .akun a:first-child {
+    text-decoration: none;
+    color: var(--primary);
+    padding: 10px 25px;
+  }
+  header .container .akun a:nth-child(2) {
+    color: var(--primary);
+    background-color: #e03a3c;
+    border-radius: 4px;
+    padding: 10px 25px;
+    text-decoration: none;
+  }
+
+  .nscroll {
+    height: 55px;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 768px) {
+  header {
+    height: 55px;
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 9999999;
+    transition: 0.3s;
+  }
+
+  header .container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+
+  header .container .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    width: fit-content;
+    height: 80%;
+    margin-left: 15px;
+  }
+
+  header .container .logo img {
+    width: 35px;
+    border-radius: 50%;
+  }
+
+  header .container .desk {
+    display: none;
+    width: 35%;
+    height: 55px;
+    list-style: none;
+    justify-content: space-between;
+  }
+
+  header .container .desk li {
+    width: fit-content;
+    display: flex;
+    height: 100%;
+    width: fit-content;
+    padding: 0px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 12px;
+    font-family: "Poppins";
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  header .container .desk li i {
+    margin-left: 8px;
+  }
+
+  header .container .desk li a {
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 12px;
+  }
+
+  header .container .desk .mega .ms {
+    position: absolute;
+    transform: translateY(-100%);
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    height: 70vh;
+    padding: 0px 0px 5vh 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+  header .container .desk .mega div.d {
+    transform: translateY(100%);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+  header .container .desk .mega .ms .container {
+    border-top: 1px solid rgba(200, 200, 200, 0.4);
+    width: 80%;
+    height: 90%;
+    padding: 20px 0px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+  header .container .desk .mega .ms .container .section {
+    width: 69%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  header .container .desk .mega .ms .container .section h3 {
+    margin-bottom: 40px;
+  }
+
+  header .container .desk .mega .ms .container .section .listSection {
+    display: flex;
+    width: 100%;
+    height: 70%;
+    justify-content: space-between;
+    align-items: start;
+  }
+  header .container .desk .mega .ms .container .section .listSection ul {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  header .container .desk .mega .ms .container .section .listSection ul li {
+    width: 100%;
+    height: 14%;
+    background-color: transparent;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  header .container .desk .mega .ms .container .section .listSection ul li a {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    background-color: transparent;
+  }
+  header .container .desk .mega .ms .container .section .listSection .small {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+  }
+  header
+    .container
+    .desk
+    .mega
+    .ms
+    .container
+    .section
+    .listSection
+    .small
+    .content {
+    height: 30%;
+    width: 100%;
+    display: flex;
+  }
+  header
+    .container
+    .desk
+    .mega
+    .ms
+    .container
+    .section
+    .listSection
+    .small
+    .content
+    .img {
+    width: 80px;
+    height: 80px;
+  }
+  header
+    .container
+    .desk
+    .mega
+    .ms
+    .container
+    .section
+    .listSection
+    .small
+    .content
+    h3 {
+    font-size: 14px;
+    margin-left: 10px;
+    width: 70%;
+  }
+  header .container .desk .mega .ms .container .printEdition {
+    width: 29%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  header .container .desk .mega .ms .container .printEdition h3 {
+    margin-bottom: 40px;
+  }
+  header .container .desk .mega .ms .container .printEdition .large {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+  }
+  header .container .desk .mega .ms .container .printEdition .large .desc {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+  }
+  header .container .desk .mega .ms .container .printEdition .large .desc h3 {
+    margin: 15px 0px;
+  }
+  header .container .desk .mega .ms .container .printEdition .large .img {
+    width: 140px;
+    height: 240px;
+  }
+  header .container .desk .mega ul li {
+    background-color: aliceblue;
+    width: 100%;
+    padding: 0;
+  }
+  header .container .desk .mega ul li a {
+    color: black;
+  }
+  header .container .desk .mega:hover ul {
+    display: block;
+  }
+
+  header .container .toggle {
+    display: flex;
+    height: 30px;
+    width: 30px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+    margin-left: 30px;
+  }
+  header .container .reNav {
+    position: fixed;
+    height: calc(100% - 55px);
+    width: 40%;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    transform: translateX(-100%);
+  }
+  header .container .reNav .container {
+    width: 80%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-family: "Poppins";
+    justify-content: start;
+  }
+  header .container .reNav .container ul {
+    margin-bottom: 20px;
+    display: flex;
+    width: 100%;
+    height: 30vh;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    list-style: none;
+  }
+  header .container .reNav .container ul h3 {
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 25px;
+  }
+  header .container .reNav .container ul li {
+    margin: 10px 20px 10px 0px;
+    padding: 10px 20px;
+    width: fit-content;
+  }
+  header .container .reNav .container ul li a {
+    color: #c1c1c1;
+    text-decoration: none;
+  }
+  header .container .reNav .container ul li a i {
+    margin-right: 10px;
+    width: fit-content;
+    height: fit-content;
+  }
+  header .container .toggle span {
+    display: block;
+    background-color: #ffffff;
+    width: 90%;
+    height: 4px;
+    border-radius: 3px;
+    transition: 0.3s;
+  }
+  header .container div.navRight {
+    transform: translateX(0);
+  }
+  header .container .toggle input {
+    position: absolute;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    z-index: 20;
+  }
+  header .container .toggle span:nth-child(2) {
+    transform-origin: 0 0;
+  }
+  header .container .toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+  }
+  header .container .toggle input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg) translate(4px, -6px);
+  }
+  header .container .toggle input:checked ~ span:nth-child(3) {
+    transform: scale(0);
+  }
+  header .container .toggle input:checked ~ span:nth-child(4) {
+    transform: rotate();
+    transform: rotate(-45deg) translate(4.5px, 5.5px);
+  }
+  header .container .akun {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    margin: 0;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  header .container .akun a:first-child {
+    text-decoration: none;
+    color: var(--primary);
+    padding: 10px 18px;
+    font-size: 10px;
+  }
+  header .container .akun a:nth-child(2) {
+    color: var(--primary);
+    background-color: #e03a3c;
+    border-radius: 4px;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-size: 10px;
+  }
+
+  .nscroll {
+    height: 55px;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+}
+@media screen and (max-width: 479px) {
+  header {
+    height: 50px;
+    display: flex;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    z-index: 9999999;
+    transition: 0.3s;
+  }
+
+  header .container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+
+  header .container .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: auto;
+    width: fit-content;
+    height: 80%;
+    margin-left: 15px;
+  }
+
+  header .container .logo img {
+    width: 25px;
+    border-radius: 50%;
+  }
+
+  header .container .desk {
+    display: none;
+    width: 35%;
+    height: 55px;
+    list-style: none;
+    justify-content: space-between;
+  }
+
+  header .container .desk li {
+    width: fit-content;
+    display: flex;
+    height: 100%;
+    width: fit-content;
+    padding: 0px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 12px;
+    font-family: "Poppins";
+    font-weight: 400;
+    letter-spacing: 1px;
+  }
+  header .container .desk li i {
+    margin-left: 8px;
+  }
+
+  header .container .desk li a {
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 12px;
+  }
+
+  header .container .desk .mega .ms {
+    position: absolute;
+    transform: translateY(-100%);
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    height: 70vh;
+    padding: 0px 0px 5vh 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+  header .container .desk .mega div.d {
+    transform: translateY(100%);
+    display: flex;
+    justify-content: center;
+    align-items: end;
+  }
+  header .container .desk .mega .ms .container {
+    border-top: 1px solid rgba(200, 200, 200, 0.4);
+    width: 80%;
+    height: 90%;
+    padding: 20px 0px 0px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+  }
+  header .container .desk .mega .ms .container .section {
+    width: 69%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  header .container .desk .mega .ms .container .section h3 {
+    margin-bottom: 40px;
+  }
+
+  header .container .desk .mega .ms .container .section .listSection {
+    display: flex;
+    width: 100%;
+    height: 70%;
+    justify-content: space-between;
+    align-items: start;
+  }
+  header .container .desk .mega .ms .container .section .listSection ul {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  header .container .desk .mega .ms .container .section .listSection ul li {
+    width: 100%;
+    height: 14%;
+    background-color: transparent;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  header .container .desk .mega .ms .container .section .listSection ul li a {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    color: #ffffff;
+    background-color: transparent;
+  }
+  header .container .desk .mega .ms .container .section .listSection .small {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+  }
+  header
+    .container
+    .desk
+    .mega
+    .ms
+    .container
+    .section
+    .listSection
+    .small
+    .content {
+    height: 30%;
+    width: 100%;
+    display: flex;
+  }
+  header
+    .container
+    .desk
+    .mega
+    .ms
+    .container
+    .section
+    .listSection
+    .small
+    .content
+    .img {
+    width: 80px;
+    height: 80px;
+  }
+  header
+    .container
+    .desk
+    .mega
+    .ms
+    .container
+    .section
+    .listSection
+    .small
+    .content
+    h3 {
+    font-size: 14px;
+    margin-left: 10px;
+    width: 70%;
+  }
+  header .container .desk .mega .ms .container .printEdition {
+    width: 29%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  header .container .desk .mega .ms .container .printEdition h3 {
+    margin-bottom: 40px;
+  }
+  header .container .desk .mega .ms .container .printEdition .large {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+  }
+  header .container .desk .mega .ms .container .printEdition .large .desc {
+    margin-left: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+  }
+  header .container .desk .mega .ms .container .printEdition .large .desc h3 {
+    margin: 15px 0px;
+  }
+  header .container .desk .mega .ms .container .printEdition .large .img {
+    width: 140px;
+    height: 240px;
+  }
+  header .container .desk .mega ul li {
+    background-color: aliceblue;
+    width: 100%;
+    padding: 0;
+  }
+  header .container .desk .mega ul li a {
+    color: black;
+  }
+  header .container .desk .mega:hover ul {
+    display: block;
+  }
+
+  header .container .toggle {
+    display: flex;
+    height: 20px;
+    width: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  header .container .reNav {
+    position: fixed;
+    height: calc(100% - 50px);
+    width: 40%;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    transform: translateX(-100%);
+  }
+  header .container .reNav .container {
+    width: 80%;
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    font-family: "Poppins";
+    justify-content: start;
+  }
+  header .container .reNav .container ul {
+    margin-bottom: 20px;
+    display: flex;
+    width: 100%;
+    height: 30vh;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    list-style: none;
+  }
+  header .container .reNav .container ul h3 {
+    font-weight: 400;
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-size: 12px;
+  }
+  header .container .reNav .container ul li {
+    margin: 10px 20px 10px 0px;
+    padding: 10px 20px;
+    width: fit-content;
+  }
+  header .container .reNav .container ul li a {
+    color: #c1c1c1;
+    text-decoration: none;
+    font-size: 10px;
+  }
+  header .container .reNav .container ul li a i {
+    margin-right: 10px;
+    width: fit-content;
+    height: fit-content;
+  }
+  header .container .toggle span {
+    display: block;
+    background-color: #ffffff;
+    width: 90%;
+    height: 2px;
+    border-radius: 3px;
+    transition: 0.3s;
+  }
+  header .container div.navRight {
+    transform: translateX(0);
+  }
+  header .container .toggle input {
+    position: absolute;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    z-index: 20;
+  }
+  header .container .toggle span:nth-child(2) {
+    transform-origin: 0 0;
+  }
+  header .container .toggle span:nth-child(4) {
+    transform-origin: 0 100%;
+  }
+  header .container .toggle input:checked ~ span:nth-child(2) {
+    transform: rotate(45deg) translate(4px, -6px);
+  }
+  header .container .toggle input:checked ~ span:nth-child(3) {
+    transform: scale(0);
+  }
+  header .container .toggle input:checked ~ span:nth-child(4) {
+    transform: rotate();
+    transform: rotate(-45deg) translate(4.5px, 5.5px);
+  }
+  header .container .akun {
+    width: 45%;
+    height: 100%;
+    display: flex;
+    margin: 0px 10px 0px 0px;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  header .container .akun a:first-child {
+    text-decoration: none;
+    color: var(--primary);
+    padding: 10px 18px;
+    font-size: 7px;
+  }
+  header .container .akun a:nth-child(2) {
+    color: var(--primary);
+    background-color: #e03a3c;
+    border-radius: 4px;
+    padding: 10px 18px;
+    text-decoration: none;
+    font-size: 7px;
+  }
+
+  .nscroll {
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+}
