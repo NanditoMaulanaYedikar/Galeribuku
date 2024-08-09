@@ -981,321 +981,6 @@
     background-color: #cccccc;
   }
 
-  #artikel1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: fit-content;
-    width: 100%;
-    padding: 90px 0px 10px 0px;
-  }
-  #artikel1 .container {
-    width: 90%;
-    height: fit-content;
-    display: flex;
-    padding: 20px 0px;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
-  }
-
-  #artikel1 .container .artikel {
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  #artikel1 .container .artikel .paragraf {
-    padding: 30px 0px 0px 0px;
-    display: flex;
-    width: 100%;
-    height: fit-content;
-    justify-content: space-between;
-    align-items: start;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(1) {
-    width: 10%;
-    height: fit-content;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(1) .sosmed {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: fit-content;
-    justify-content: space-between;
-    align-items: center;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(1) .bookmark {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: fit-content;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(1) .bookmark a {
-    height: 70px;
-    width: 70px;
-    margin-top: 300%;
-    border-radius: 15%;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    display: flex;
-    transition: 0.3s;
-    justify-content: center;
-    font-size: 27px;
-    font-weight: 300;
-    font-family: "Poppins";
-    align-items: center;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(1) .bookmark a:hover {
-    font-size: 30px;
-    border: 1px solid rgba(255, 255, 255, 0.8);
-    color: #ffffff;
-    background-color: #e03a3c;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(1) .sosmed a {
-    height: 35px;
-    width: 35px;
-    border: 1px solid transparent;
-    text-decoration: none;
-    font-weight: 600;
-    margin: 20px 0px;
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #090909;
-    border-radius: 50%;
-    transition: 0.3s;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(1) .sosmed a:hover {
-    color: #000000;
-    background-color: transparent;
-    border: 1px solid #000000;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(2) {
-    width: 88%;
-    height: fit-content;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(2) .penulis {
-    padding: 10px 0px 20px 0px;
-    font-size: 24px;
-    font-family: "Poppins";
-    font-weight: 400;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(2) .penulis a {
-    color: #e03a3c;
-    font-weight: 600;
-    text-decoration: none;
-    transition: 0.3s;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(2) .penulis a:hover {
-    text-decoration: underline;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(2) p {
-    height: fit-content;
-    width: 100%;
-    font-size: 24px;
-    line-height: 1.6em;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(2) p a {
-    color: #b70d0f;
-    transition: 0.3s;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(2) p a:hover {
-    color: #f91014;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(2) .readmore {
-    width: 350px;
-    height: 270px;
-    border-top: 1px solid rgba(0, 0, 0, 1);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    box-shadow: 8px 8px 25px rgba(200, 200, 200, 0.2);
-    float: left;
-    border-radius: 2%;
-    margin: 5px 40px 5px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(2) .readmore .desc {
-    width: 80%;
-    height: 90%;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(2) .readmore h3 {
-    margin: 10px 0px;
-    font-size: 25px;
-    font-family: "Poppins";
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(2) .readmore p {
-    font-size: 21px;
-    line-height: 1.4em;
-    text-align: left;
-  }
-  #artikel1 .container .artikel .head {
-    height: 110vh;
-    width: 100%;
-    padding: 0px 0px 15px 0px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
-  }
-  #artikel1 .container .artikel .head .waktu {
-    width: 100%;
-    height: 30px;
-    display: flex;
-    gap: 15px;
-    font-family: "Poppins";
-    font-weight: 900;
-    color: #525252;
-    align-items: center;
-    justify-content: start;
-  }
-  #artikel1 .container .artikel .head .waktu h3,
-  #artikel1 .container .artikel .head .waktu p {
-    padding: 1px 15px 3px 0px;
-  }
-  #artikel1 .container .artikel .head .waktu .tgl {
-    border-right: 2px solid #000000;
-  }
-  #artikel1 .container .artikel .head .waktu .jam {
-    border-right: 2px solid #000000;
-  }
-  #artikel1 .container .artikel .head .title {
-    height: 160px;
-    width: 95%;
-    font-size: 45px;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow-y: hidden;
-  }
-  #artikel1 .container .artikel .head .lead {
-    height: 50px;
-    width: 90%;
-    font-weight: 400;
-    font-family: "Poppins";
-    color: rgba(0, 0, 0, 0.7);
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow-y: hidden;
-    font-size: 15px;
-  }
-  #artikel1 .container .artikel .head .img {
-    width: 100%;
-    height: 600px;
-  }
-  #artikel1 .container .artikel .head .desc {
-    font-weight: 400;
-    font-family: "Poppins";
-  }
-  #artikel1 .container .adv {
-    width: 100%;
-    margin-top: 30px;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #artikel1 .container .adv .iklan {
-    width: 95%;
-    height: 60px;
-    background-color: rgba(0, 0, 0, 0.1);
-    margin-bottom: 50px;
-  }
-
-  #artikel1 .container .adv .featuredVideo {
-    width: 95%;
-    height: fit-content;
-    border-top: 4px solid rgba(0, 0, 0, 0.7);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-bottom: 3px solid #000000;
-    padding: 10px 0px 30px 0px;
-  }
-  #artikel1 .container .adv .featuredVideo h3 {
-    font-size: 20px;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: "Poppins";
-    width: 100%;
-    font-weight: 600;
-    color: rgba(0, 0, 0, 0.7);
-    margin-bottom: 10px;
-  }
-
-  #artikel1 .container .adv .featuredVideo video {
-    width: 100%;
-    margin-bottom: 15px;
-  }
-  #artikel1 .container .adv .featuredVideo a {
-    font-size: 26px;
-    color: #000000;
-    width: 100%;
-    text-align: left;
-  }
-  #artikel1 .container .adv .mostPopular {
-    width: 95%;
-    height: fit-content;
-    padding: 50px 0px 10px 0px;
-  }
-  #artikel1 .container .adv .mostPopular .judul {
-    width: 100%;
-    text-align: left;
-    padding: 30px 0px;
-    border-top: 2px solid #000000;
-    border-bottom: 2px solid #000000;
-    margin-bottom: 20px;
-    font-size: 30px;
-  }
-
-  #artikel1 .container .adv .mostPopular .content:last-child {
-    border-bottom: none;
-  }
-  #artikel1 .container .adv .mostPopular .content {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-    height: fit-content;
-    padding: 20px 0px;
-    width: 100%;
-    display: flex;
-    margin: 40px 0px;
-    justify-content: space-between;
-    align-items: start;
-  }
-  #artikel1 .container .adv .mostPopular .content .img {
-    width: 25%;
-    height: 120px;
-  }
-  #artikel1 .container .adv .mostPopular .content .desc {
-    width: 70%;
-  }
-  #artikel1 .container .adv .mostPopular .content .tipe {
-    color: #525252;
-    font-family: "Poppins";
-    font-weight: 400;
-    font-size: 16px;
-  }
-  #artikel1 .container .adv .mostPopular .content .title {
-    font-size: 20px;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow-y: hidden;
-    margin: 5px 0px 15px 0px;
-  }
-  #artikel1 .container .adv .mostPopular .content .penulis {
-    font-size: 12px;
-    color: #525252;
-    font-family: "Poppins";
-    font-weight: 500;
-    text-transform: uppercase;
-  }
-
   section#about .row:first-child .content,
   section#about .row:nth-child(2) .content {
     flex-direction: column;
@@ -1339,9 +1024,55 @@
     width: 80%;
     margin-bottom: 20px;
   }
-  /*
-    artikel model dua
-    */
+  #artikel1 .container:first-child .head .title {
+    font-size: 2.5em;
+    max-width: 70%;
+  }
+
+  #artikel1 .container:first-child .head .lead {
+    font-size: 1em;
+    max-width: 80%;
+  }
+
+  #artikel1 .container:first-child .head .img {
+    height: 70vh;
+  }
+
+  #artikel1 .container:nth-child(2) .paragraf {
+    width: 100%;
+  }
+
+  #artikel1 .container:nth-child(2) .paragraf .row:nth-child(2) p {
+    font-size: 1.1em;
+    width: 80%;
+  }
+
+  #artikel1 .container:nth-child(2) .adv {
+    width: 100%;
+    padding-top: 50px;
+    text-align: center; /* Center the "Most Popular" section */
+  }
+
+  #artikel1 .container:nth-child(2) .adv .mostPopular {
+    padding: 3cm 10% 0 20px;
+  }
+
+  #artikel1 .container:nth-child(2) .adv .mostPopular .content {
+    flex-direction: row; /* Set flex direction to row */
+    align-items: center; /* Align items to center */
+    justify-content: center; /* Center content horizontally */
+  }
+
+  #artikel1 .container:nth-child(2) .adv .mostPopular .content .img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px; /* Add some space between image and text */
+  }
+
+  #artikel1 .container:nth-child(2) .adv .mostPopular .content .desc {
+    width: auto;
+    text-align: start; /* Align text to the start */
+  }
   #artikel2 {
     width: 100%;
     font-family: "Times New Roman", Times, serif;
@@ -1547,6 +1278,26 @@
 
   #artikel2 .share-save-link:hover {
     text-decoration: underline;
+  }
+  #readmore .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #readmore .slide {
+    min-width: 45%; /* Menyesuaikan lebar slide */
+    margin: 10px;
+  }
+
+  #readmore .slide img {
+    width: 100%; /* Sesuaikan gambar dengan lebar slide */
+    height: auto;
+  }
+
+  #prev,
+  #next {
+    position: static; /* Ubah posisi tombol menjadi statis */
+    margin: 10px;
   }
 }
 
@@ -2598,331 +2349,6 @@
     height: 60px;
     background-color: #cccccc;
   }
-  #artikel1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: fit-content;
-    width: 100%;
-    padding: 90px 0px 10px 0px;
-  }
-  #artikel1 .container {
-    width: 90%;
-    height: fit-content;
-    display: flex;
-    padding: 20px 0px;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
-  }
-
-  #artikel1 .container .artikel {
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  #artikel1 .container .artikel .paragraf {
-    padding: 30px 0px 0px 0px;
-    display: flex;
-    width: 100%;
-    height: fit-content;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(1) {
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    margin-bottom: 50px;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(1) .sosmed {
-    display: flex;
-    flex-direction: row;
-    width: fit-content;
-    height: fit-content;
-    margin-right: auto;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: auto;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(1) .bookmark {
-    width: fit-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: fit-content;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(1) .bookmark a {
-    height: 50px;
-    width: 50px;
-    margin-top: 0;
-    border-radius: 15%;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    display: flex;
-    transition: 0.3s;
-    justify-content: center;
-    font-size: 27px;
-    font-weight: 300;
-    font-family: "Poppins";
-    align-items: center;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(1) .bookmark a:hover {
-    font-size: 30px;
-    border: 1px solid rgba(255, 255, 255, 0.8);
-    color: #ffffff;
-    background-color: #e03a3c;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(1) .sosmed a {
-    height: 35px;
-    width: 35px;
-    border: 1px solid transparent;
-    text-decoration: none;
-    font-weight: 600;
-    margin: 0px 30px 0px 0px;
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #000000ac;
-    border-radius: 50%;
-    transition: 0.3s;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(1) .sosmed a:hover {
-    color: #000000;
-    background-color: transparent;
-    border: 1px solid #000000;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(2) {
-    width: 88%;
-    height: fit-content;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(2) .penulis {
-    padding: 10px 0px 20px 0px;
-    font-size: 24px;
-    font-family: "Poppins";
-    font-weight: 400;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(2) .penulis a {
-    color: #e03a3c;
-    font-weight: 600;
-    text-decoration: none;
-    transition: 0.3s;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(2) .penulis a:hover {
-    text-decoration: underline;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(2) p {
-    height: fit-content;
-    width: 100%;
-    font-size: 24px;
-    line-height: 1.6em;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(2) p a {
-    color: #b70d0f;
-    transition: 0.3s;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(2) p a:hover {
-    color: #f91014;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(2) .readmore {
-    width: 350px;
-    height: 270px;
-    border-top: 1px solid rgba(0, 0, 0, 1);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    box-shadow: 8px 8px 25px rgba(200, 200, 200, 0.2);
-    float: left;
-    border-radius: 2%;
-    margin: 5px 40px 5px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(2) .readmore .desc {
-    width: 80%;
-    height: 90%;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(2) .readmore h3 {
-    margin: 10px 0px;
-    font-size: 25px;
-    font-family: "Poppins";
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(2) .readmore p {
-    font-size: 21px;
-    line-height: 1.4em;
-    text-align: left;
-  }
-  #artikel1 .container .artikel .head {
-    height: fit-content;
-    width: 100%;
-    padding: 30px 0px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-  }
-  #artikel1 .container .artikel .head .waktu {
-    width: 100%;
-    height: 25px;
-    display: flex;
-    gap: 15px;
-    margin-bottom: 20px;
-    font-family: "Poppins";
-    font-weight: 900;
-    font-size: 12px;
-    color: #525252;
-    align-items: center;
-    justify-content: start;
-  }
-  #artikel1 .container .artikel .head .waktu h3,
-  #artikel1 .container .artikel .head .waktu p {
-    padding: 1px 15px 3px 0px;
-  }
-  #artikel1 .container .artikel .head .waktu .tgl {
-    border-right: 2px solid #000000;
-  }
-  #artikel1 .container .artikel .head .waktu .jam {
-    border-right: 2px solid #000000;
-  }
-  #artikel1 .container .artikel .head .title {
-    height: fit-content;
-    width: 95%;
-    font-size: 45px;
-    margin-bottom: 15px;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow-y: hidden;
-  }
-  #artikel1 .container .artikel .head .lead {
-    height: fit-content;
-    width: 90%;
-    margin-bottom: 20px;
-    font-weight: 400;
-    font-family: "Poppins";
-    color: rgba(0, 0, 0, 0.7);
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow-y: hidden;
-    font-size: 15px;
-  }
-  #artikel1 .container .artikel .head .img {
-    width: 100%;
-    height: 420px;
-    margin-bottom: 18px;
-  }
-  #artikel1 .container .artikel .head .desc {
-    font-weight: 400;
-    font-family: "Poppins";
-  }
-  #artikel1 .container .adv {
-    width: 100%;
-    margin-top: 30px;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #artikel1 .container .adv .iklan {
-    width: 95%;
-    height: 60px;
-    background-color: rgba(0, 0, 0, 0.1);
-    margin-bottom: 50px;
-  }
-
-  #artikel1 .container .adv .featuredVideo {
-    width: 95%;
-    height: fit-content;
-    border-top: 4px solid rgba(0, 0, 0, 0.7);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-bottom: 3px solid #000000;
-    padding: 10px 0px 30px 0px;
-  }
-  #artikel1 .container .adv .featuredVideo h3 {
-    font-size: 20px;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: "Poppins";
-    width: 100%;
-    font-weight: 600;
-    color: rgba(0, 0, 0, 0.7);
-    margin-bottom: 10px;
-  }
-
-  #artikel1 .container .adv .featuredVideo video {
-    width: 100%;
-    margin-bottom: 15px;
-  }
-  #artikel1 .container .adv .featuredVideo a {
-    font-size: 26px;
-    color: #000000;
-    width: 100%;
-    text-align: left;
-  }
-  #artikel1 .container .adv .mostPopular {
-    width: 95%;
-    height: fit-content;
-    padding: 50px 0px 10px 0px;
-  }
-  #artikel1 .container .adv .mostPopular .judul {
-    width: 100%;
-    text-align: left;
-    padding: 30px 0px;
-    border-top: 2px solid #000000;
-    border-bottom: 2px solid #000000;
-    margin-bottom: 20px;
-    font-size: 30px;
-  }
-
-  #artikel1 .container .adv .mostPopular .content:last-child {
-    border-bottom: none;
-  }
-  #artikel1 .container .adv .mostPopular .content {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-    height: fit-content;
-    padding: 20px 0px;
-    width: 100%;
-    display: flex;
-    margin: 40px 0px;
-    justify-content: space-between;
-    align-items: start;
-  }
-  #artikel1 .container .adv .mostPopular .content .img {
-    width: 25%;
-    height: 120px;
-  }
-  #artikel1 .container .adv .mostPopular .content .desc {
-    width: 70%;
-  }
-  #artikel1 .container .adv .mostPopular .content .tipe {
-    color: #525252;
-    font-family: "Poppins";
-    font-weight: 400;
-    font-size: 16px;
-  }
-  #artikel1 .container .adv .mostPopular .content .title {
-    font-size: 20px;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow-y: hidden;
-    margin: 5px 0px 15px 0px;
-  }
-  #artikel1 .container .adv .mostPopular .content .penulis {
-    font-size: 12px;
-    color: #525252;
-    font-family: "Poppins";
-    font-weight: 500;
-    text-transform: uppercase;
-  }
 
   section#about .row:first-child .content,
   section#about .row:nth-child(2) .content {
@@ -2974,9 +2400,61 @@
     width: 90%;
     margin-bottom: 20px;
   }
-  /*
-    artikel model dua
-    */
+  #artikel1 .container {
+    flex-direction: column;
+  }
+
+  #artikel1 .container:first-child .head .title {
+    font-size: 2em;
+    max-width: 80%;
+  }
+
+  #artikel1 .container:first-child .head .lead {
+    font-size: 0.9em;
+    max-width: 90%;
+  }
+
+  #artikel1 .container:first-child .head .img {
+    height: 60vh;
+  }
+
+  #artikel1 .container:nth-child(2) .paragraf {
+    width: 90%;
+    padding-left: 5%;
+  }
+
+  #artikel1 .container:nth-child(2) .paragraf .row:nth-child(2) p {
+    font-size: 1em;
+    width: 100%;
+  }
+
+  #artikel1 .container:nth-child(2) .adv {
+    width: 100%;
+    padding-top: 30px;
+    order: 2;
+    text-align: center; /* Center the "Most Popular" section */
+  }
+
+  #artikel1 .container:nth-child(2) .adv .mostPopular {
+    padding: 2cm 5% 0 10px;
+  }
+
+  #artikel1 .container:nth-child(2) .adv .mostPopular .content {
+    flex-direction: row; /* Set flex direction to row */
+    align-items: center; /* Align items to center */
+    justify-content: center; /* Center content horizontally */
+  }
+
+  #artikel1 .container:nth-child(2) .adv .mostPopular .content .img {
+    width: 100px;
+    height: 100px;
+    margin-right: 10px; /* Add some space between image and text */
+  }
+
+  #artikel1 .container:nth-child(2) .adv .mostPopular .content .desc {
+    width: auto;
+    text-align: start; /* Align text to the start */
+  }
   #artikel2 {
     width: 100%;
     font-family: "Times New Roman", Times, serif;
@@ -3183,6 +2661,26 @@
   #artikel2 .share-save-link:hover {
     text-decoration: underline;
   }
+  #readmore .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #readmore .slide {
+    min-width: 80%; /* Menyesuaikan lebar slide */
+    margin: 10px;
+  }
+
+  #readmore .slide img {
+    width: 100%; /* Sesuaikan gambar dengan lebar slide */
+    height: auto;
+  }
+
+  #prev,
+  #next {
+    position: static; /* Ubah posisi tombol menjadi statis */
+    margin: 10px;
+  }
 }
 
 /* ----------------
@@ -3340,6 +2838,11 @@
     flex-direction: column;
     align-items: center;
   }
+  #content .row:first-child ul li:nth-child(3), /* Fiksi & Puisi */
+  #content .row:first-child ul li:nth-child(7), /* Writing Tips */
+  #content .row:first-child ul li:nth-child(10) { /* Kata & Kota */
+    display: none;
+  }
   #content .row:first-child {
     width: 100%;
     height: 40px;
@@ -3366,7 +2869,7 @@
     padding: 0px 4px;
   }
   #content .row:first-child ul li a {
-    color: #000000;
+    color: #ffffff;
     text-decoration: none;
     font-size: 7px;
     transition: 0.2s;
@@ -3417,7 +2920,6 @@
 
   #content .row:nth-child(3) .col:first-child h3 {
     font-size: 20px;
-    
   }
   #content .row:nth-child(3) .col:nth-child(2) {
     width: 95%;
@@ -3535,7 +3037,6 @@
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow-y: hidden;
-    
   }
   #review .container .row:nth-child(2) .col:nth-child(1) img {
     width: 100%;
@@ -4226,339 +3727,6 @@
     height: 60px;
     background-color: #cccccc;
   }
-
-  #artikel1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: fit-content;
-    width: 100%;
-    padding: 20px 0px 10px 0px;
-  }
-  #artikel1 .container {
-    width: 90%;
-    height: fit-content;
-    display: flex;
-    padding: 20px 0px;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
-  }
-
-  #artikel1 .container .artikel {
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  #artikel1 .container .artikel .paragraf {
-    padding: 20px 0px 0px 0px;
-    display: flex;
-    width: 100%;
-    height: fit-content;
-    justify-content: left;
-    align-items: start;
-    flex-direction: column;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(1) {
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    margin-bottom: 50px;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(1) .sosmed {
-    display: flex;
-    flex-direction: row;
-    width: fit-content;
-    height: fit-content;
-    margin-right: auto;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: auto;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(1) .bookmark {
-    width: fit-content;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: fit-content;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(1) .bookmark a {
-    height: 50px;
-    width: 50px;
-    margin-top: 0;
-    border-radius: 15%;
-    border: 1px solid rgba(0, 0, 0, 0.3);
-    display: flex;
-    transition: 0.3s;
-    justify-content: center;
-    font-size: 27px;
-    font-weight: 300;
-    font-family: "Poppins";
-    align-items: center;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(1) .bookmark a:hover {
-    font-size: 30px;
-    border: 1px solid rgba(255, 255, 255, 0.8);
-    color: #ffffff;
-    background-color: #e03a3c;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(1) .sosmed a {
-    height: 35px;
-    width: 35px;
-    border: 1px solid transparent;
-    text-decoration: none;
-    font-weight: 600;
-    margin: 0px 30px 0px 0px;
-    color: #ffffff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #000000ac;
-    border-radius: 50%;
-    transition: 0.3s;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(1) .sosmed a:hover {
-    color: #000000;
-    background-color: transparent;
-    border: 1px solid #000000;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(2) {
-    width: 90%;
-    height: fit-content;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(2) .penulis {
-    padding: 10px 0px 20px 0px;
-    font-size: 24px;
-    font-family: "Poppins";
-    font-weight: 400;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(2) .penulis a {
-    color: #e03a3c;
-    font-weight: 600;
-    text-decoration: none;
-    transition: 0.3s;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(2) .penulis a:hover {
-    text-decoration: underline;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(2) p {
-    height: fit-content;
-    width: 100%;
-    font-size: 22px;
-    line-height: 1.6em;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(2) p a {
-    color: #b70d0f;
-    transition: 0.3s;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(2) p a:hover {
-    color: #f91014;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(2) .readmore {
-    width: 300px;
-    height: fit-content;
-    padding: 10px 0px 20px 0px;
-    border-top: 1px solid rgba(0, 0, 0, 1);
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    box-shadow: 8px 8px 25px rgba(200, 200, 200, 0.2);
-    float: left;
-    border-radius: 2%;
-    margin: 5px 40px 30px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(2) .readmore .desc {
-    width: 80%;
-    height: 90%;
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(2) .readmore h3 {
-    margin: 10px 0px;
-    font-size: 22px;
-    font-family: "Poppins";
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(2) .readmore p {
-    font-size: 18px;
-    line-height: 1.4em;
-    text-align: left;
-  }
-  #artikel1 .container .artikel .head {
-    height: fit-content;
-    width: 100%;
-    padding: 30px 0px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-  }
-  #artikel1 .container .artikel .head .waktu {
-    width: 100%;
-    height: 25px;
-    display: flex;
-    gap: 15px;
-    margin-bottom: 20px;
-    font-weight: 900;
-    font-size: 10px;
-    color: #e03a3c;
-    align-items: center;
-    justify-content: start;
-  }
-  #artikel1 .container .artikel .head .waktu h3,
-  #artikel1 .container .artikel .head .waktu p {
-    padding: 1px 15px 3px 0px;
-  }
-  #artikel1 .container .artikel .head .waktu .tgl {
-    border-right: 2px solid #000000;
-  }
-  #artikel1 .container .artikel .head .waktu .jam {
-    border-right: 2px solid #000000;
-  }
-  #artikel1 .container .artikel .head .title {
-    height: fit-content;
-    width: 95%;
-    font-size: 40px;
-    margin-bottom: 15px;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow-y: hidden;
-  }
-  #artikel1 .container .artikel .head .lead {
-    height: fit-content;
-    width: 90%;
-    margin-bottom: 20px;
-    font-weight: 400;
-    color: rgba(0, 0, 0, 0.7);
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow-y: hidden;
-    font-size: 14px;
-  }
-  #artikel1 .container .artikel .head .img {
-    width: 100%;
-    height: 280px;
-    margin-bottom: 18px;
-  }
-  #artikel1 .container .artikel .head .desc {
-    font-weight: 400;
-  }
- 
-  #artikel1 .container .artikel .paragraf .row:nth-child(2)  p {
-    font-size: 17px;
-    font-family: 'Bell MT';
-  }
-  #artikel1 .container .artikel .paragraf .row:nth-child(2)  .penulis {
-    font-size: 15px;
-  }
-  #artikel1 .container .adv {
-    width: 100%;
-    margin-top: 30px;
-    height: fit-content;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  #artikel1 .container .adv .iklan {
-    width: 95%;
-    height: 60px;
-    background-color: rgba(0, 0, 0, 0.1);
-    margin-bottom: 50px;
-  }
-
-  #artikel1 .container .adv .featuredVideo {
-    width: 95%;
-    height: fit-content;
-    border-top: 4px solid rgba(0, 0, 0, 0.7);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-bottom: 3px solid #000000;
-    padding: 10px 0px 30px 0px;
-  }
-  #artikel1 .container .adv .featuredVideo h3 {
-    font-size: 20px;
-    text-align: center;
-    text-transform: uppercase;
-    font-family: "Poppins";
-    width: 100%;
-    font-weight: 600;
-    color: rgba(0, 0, 0, 0.7);
-    margin-bottom: 10px;
-  }
-
-  #artikel1 .container .adv .featuredVideo video {
-    width: 100%;
-    margin-bottom: 15px;
-  }
-  #artikel1 .container .adv .featuredVideo a {
-    font-size: 26px;
-    color: #000000;
-    width: 100%;
-    text-align: left;
-  }
-  #artikel1 .container .adv .mostPopular {
-    width: 95%;
-    height: fit-content;
-    padding: 50px 0px 10px 0px;
-  }
-  #artikel1 .container .adv .mostPopular .judul {
-    width: 100%;
-    text-align: left;
-    padding: 30px 0px;
-    border-top: 2px solid #000000;
-    border-bottom: 2px solid #000000;
-    margin-bottom: 20px;
-    font-size: 30px;
-  }
-
-  #artikel1 .container .adv .mostPopular .content:last-child {
-    border-bottom: none;
-  }
-  #artikel1 .container .adv .mostPopular .content {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
-    height: fit-content;
-    padding: 20px 0px;
-    width: 100%;
-    display: flex;
-    margin: 40px 0px;
-    justify-content: space-between;
-    align-items: start;
-  }
-  #artikel1 .container .adv .mostPopular .content .img {
-    width: 40%;
-    height: 100px;
-  }
-  #artikel1 .container .adv .mostPopular .content .desc {
-    width: 55%;
-  }
-  #artikel1 .container .adv .mostPopular .content .tipe {
-    color: #525252;
-    font-family: "Poppins";
-    font-weight: 400;
-    font-size: 16px;
-  }
-  #artikel1 .container .adv .mostPopular .content .title {
-    font-size: 20px;
-    display: -webkit-box;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    overflow-y: hidden;
-    margin: 5px 0px 15px 0px;
-  }
-  #artikel1 .container .adv .mostPopular .content .penulis {
-    font-size: 12px;
-    color: #525252;
-    font-family: "Poppins";
-    font-weight: 500;
-    text-transform: uppercase;
-  }
-  
   section#about {
     padding: 20px 0;
   }
@@ -4636,24 +3804,100 @@
   section#team .row:nth-child(2) .kolom p {
     font-size: 12px;
   }
-  /*
-    model artikel kedua
-    */
+
+  #artikel1 .container {
+    flex-direction: column;
+  }
+
+  #artikel1 .container:first-child .head .title {
+    font-size: 1.5em;
+    max-width: 80%;
+  }
+
+  #artikel1 .container:first-child .head .lead {
+    font-size: 0.8em;
+    max-width: 70%;
+  }
+
+  #artikel1 .container:first-child .head .img {
+    height: 50vh;
+  }
+  #artikel1 .container:first-child .head .waktu {
+    font-size: 0.7em;
+  }
+  #artikel1 .container:nth-child(2) {
+    width: 100%;
+    padding: 0;
+  }
+
+  #artikel1 .container:nth-child(2) .paragraf {
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  #artikel1 .container:nth-child(2) .paragraf .row:nth-child(1) {
+    width: 15%;
+  }
+  #artikel1 .container:nth-child(2) .paragraf .row:nth-child(2) {
+    width: 85%;
+  }
+  #artikel1 .container:nth-child(2) .paragraf .row:nth-child(2) p {
+    font-size: 0.9em;
+    word-wrap: break-word;
+  }
+  #artikel1 .container:nth-child(2) .paragraf .row:nth-child(2) .penulis {
+    font-size: 0.9em;
+  }
+  #artikel1 .container:nth-child(2) .adv {
+    width: 100%;
+    padding-top: 20px;
+    order: 2;
+    text-align: center; /* Center the "Most Popular" section */
+    justify-content: center;
+  }
+
+  #artikel1 .container:nth-child(2) .adv .mostPopular {
+    padding: 1cm 0% 0 0px;
+  }
+
+  #artikel1 .container:nth-child(2) .adv .mostPopular .content {
+    flex-direction: row; /* Set flex direction to row */
+    align-items: start; /* Align items to center */
+    justify-content: left; /* Center content horizontally */
+  }
+
+  #artikel1 .container:nth-child(2) .adv .mostPopular .content .img {
+    width: 100px; /* Set consistent width */
+    height: 100px; /* Set consistent height */
+    margin-right: 10px; /* Add some space between image and text */
+    object-fit: cover; /* Ensure images cover the set dimensions */
+  }
+
+  #artikel1 .container:nth-child(2) .adv .mostPopular .content .desc {
+    width: 80%;
+    text-align: start; /* Align text to the start */
+  }
+
+  #artikel1 .container:nth-child(2) .paragraf {
+    order: 1;
+  }
   #artikel2 .container {
     width: 100%;
-    padding: 10px;
+    padding: 0px;
   }
 
   #artikel2 .header {
     padding-left: 0;
-    text-align: center; /* Mengatur teks agar berada di tengah untuk tampilan yang lebih rapi */
     justify-content: center;
-    padding-right: 20px;
+    text-align: center;
   }
 
   #artikel2 .header h1 {
     font-size: 1.8em; /* Mengurangi ukuran font untuk header utama */
     max-width: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
   }
 
   #artikel2 .header h2 {
@@ -4663,12 +3907,13 @@
   #artikel2 .header p {
     font-size: 0.9em;
     max-width: 100%;
+    margin-left: 5%;
+    margin-right: 5%;
   }
 
-  #artikel2 .image-wrapper img {
+  #artikel2 .image-wrapper .image {
     width: 100%;
     height: auto; /* Mengatur tinggi gambar secara otomatis untuk menjaga rasio aspek */
-    
   }
 
   #artikel2 .image {
@@ -4676,12 +3921,16 @@
     height: auto;
     margin-top: 10px;
   }
-
-  #artikel2 .image-caption {
+  #artikel2 .image-wrapper .image-caption {
     width: 100%;
-    font-size: 0.8em; /* Mengurangi ukuran font untuk keterangan gambar */
-    padding-left: 0; /* Menghapus padding kiri */
-    text-align: center; /* Mengatur teks agar berada di tengah */
+  }
+  #artikel2 .image-wrapper .image-caption img {
+    width: 40px; /* Mengatur teks agar berada di tengah */
+  }
+  #artikel2 .image-wrapper .image-caption .description {
+    font-size: 0.7em; /* Mengurangi ukuran font untuk keterangan gambar */
+    color: #333; /* Text color */
+    text-align: left;
   }
 
   #artikel2 .meta-wrapper {
@@ -4695,10 +3944,19 @@
   #artikel2 .meta-wrapper .share-save {
     width: 100%;
     text-align: center;
+    margin-top: 10px;
     justify-content: center;
-    padding-top: 20px;
   }
-
+  #artikel2 .meta-wrapper .article-meta {
+    font-size: 0.7em;
+  }
+  #artikel2 .meta-wrapper .share-save a {
+    font-size: 0.7em;
+  }
+  #artikel2 .meta-wrapper .share-save-link img {
+    width: 17px;
+    height: 17px;
+  }
   #artikel2 .content-wrapper {
     flex-direction: column;
     padding-left: 0;
@@ -4725,13 +3983,14 @@
   }
 
   #artikel2 .content {
-    margin-left: 0;
     margin-right: 0;
-    width: 80%;
+    width: 100%;
+    margin-left: 10%;
   }
 
   #artikel2 .content .author {
-    font-size: 1em;
+    width: 80%;
+    font-size: 0.9em;
     margin-top: 10px;
     margin-bottom: 10px;
     padding-top: 5px;
@@ -4739,8 +3998,8 @@
   }
 
   #artikel2 .content p {
+    width: 80%;
     font-size: 0.9em;
-    margin-left: 20px;
   }
 
   #artikel2 .content p:first-of-type::first-letter {
@@ -4755,4 +4014,45 @@
   .share-save-link:hover {
     text-decoration: underline;
   }
+  #readmore .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #readmore .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    max-width: 100%;
+  }
+
+  #readmore .slide {
+    min-width: 25.33%; /* Menampilkan 3 slide per halaman */
+    max-width:25.33%;
+    margin: 5px;
+  }
+
+  #readmore .slide img {
+    width: 100%; /* Sesuaikan gambar dengan lebar slide */
+    height: 100px;
+  }
+  #readmore .slide h3 {
+    font-size: 0.9em;
+    width: 100%;
+    word-break: break-all; /* Memaksa pemutusan kata */
+    overflow-wrap: break-word; /* Menambahkan pemutusan kata jika diperlukan */
+}
+
+
+  #prev {
+  margin-top: 10px;
+  position: absolute;
+  right: 55px; /* Sesuaikan posisi relatif dari sisi kanan */
+  margin-right: 30px; /* Beri margin agar terpisah */
+}
+
+#next {
+  margin-top: 10px;
+  position: absolute;
+  right: 25px; /* Atur agar berada di tepi kanan */
+}
 }

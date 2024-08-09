@@ -27,13 +27,11 @@
     </div>
     <div class="image-wrapper">
         <img src="demo.galeribukujakarta.com/img/<?= htmlspecialchars($r1['gambar'], ENT_QUOTES, 'UTF-8') ?>" alt="Image" class="image">
+        <div class="image-caption">
+            <img src="demo.galeribukujakarta.com/img/logodesc.png" alt="Logo"> 
+            <span class="description"><?=$r1['deskripsi']?></span>
+        </div>
     </div>
-    <div class="image-caption">
-        <img src="demo.galeribukujakarta.com/img/logodesc.png" alt="Logo"> 
-        <span class="description"><?=$r1['deskripsi']?></span>
-    </div>
-
-    <hr class="long-line">
     <div class="meta-wrapper">
         <div class="article-meta"><?= htmlspecialchars($r1['tanggal'], ENT_QUOTES, 'UTF-8') ?></div>
         <div class="share-save">

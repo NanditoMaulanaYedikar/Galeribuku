@@ -106,7 +106,7 @@
                 </div>
             </div>
         </div>
-    </header>
+</header>
     <main>
         <?php
             $page = @$_GET['page'];
@@ -147,12 +147,12 @@
                         <a href="">Advertising</a>
                         <a href="https://www.tokopedia.com/galeribukujakarta">Marchandise</a>
                     </li>
-                    <li><a href=".?page=memikirkan">Memikirkan Kata</a>
+                    <li><a href=".?page=memikirkan">Submisi</a>
                         <a href=".?page=siapakahjkt">Siapakah Jakarta</a>
                         <a href="">Kontak</a>
                     </li>
                     <li><a href=".?page=sponsor">Sponsor</a>
-                        <a href=".?page=submission">Submisi</a>
+                        <a href=".?page=submission">Memikirkan Kata</a>
                         <a href="">Karir</a>
                     </li>
                 </ul>

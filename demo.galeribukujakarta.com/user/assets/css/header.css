@@ -1033,7 +1033,7 @@ header .container .akun a:nth-child(2) {
     background-color: rgba(0, 0, 0, 0.9);
   }
 }
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 480px) {
   header {
     height: 50px;
     display: flex;

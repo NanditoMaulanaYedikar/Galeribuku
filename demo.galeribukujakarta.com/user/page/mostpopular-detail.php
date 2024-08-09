@@ -3,28 +3,23 @@
         <div class="head">
             <?php
                 $id1 = $_GET['no_mostpopular'];
+                
+                // Ambil nilai jumlah_dilihat dari database
+                $sql_select = "SELECT jumlah_dilihat FROM tb_mostpopular WHERE no_mostpopular = '$id1'";
+                $result = mysqli_query($k, $sql_select);
+                if ($result) {
+                    $row = mysqli_fetch_assoc($result);
+                    $new_views = $row['jumlah_dilihat'] + 1;
+                    
+                    // Update nilai jumlah_dilihat
+                    $sql_update = "UPDATE tb_mostpopular SET jumlah_dilihat = $new_views WHERE no_mostpopular = '$id1'";
+                    mysqli_query($k, $sql_update);
+                }
 
-                // Debug: Tampilkan nilai parameter
-                echo "<!-- Parameter no_mostpopular: $id1 -->";
-
-                // Membuat prepared statement
-                if ($stmt = $k->prepare("SELECT * FROM tb_mostpopular WHERE no_mostpopular = ? ORDER BY no_mostpopular DESC LIMIT 1")) {
-                    // Bind parameter
-                    $stmt->bind_param("i", $id1);
-
-                    // Menjalankan statement
-                    $stmt->execute();
-
-                    // Mendapatkan hasil
-                    $result = $stmt->get_result();
-
-                    // Memeriksa apakah ada hasil yang ditemukan
-                    if ($result && $result->num_rows > 0) {
-                        while ($r1 = $result->fetch_assoc()) {
-                    // Debug: Tampilkan data yang diambil dari database
-                    echo "<!-- Data r1: " . json_encode($r1) . " -->";
-
-                    // Proses data $r1
+                $sql1 = "SELECT * FROM tb_mostpopular WHERE no_mostpopular='$id1' ORDER BY no_mostpopular DESC LIMIT 1";
+                $q1 = mysqli_query($k, $sql1);
+                if ($q1 && mysqli_num_rows($q1) > 0) {
+                    while ($r1 = mysqli_fetch_assoc($q1)){
             ?>
             <div class="img" style="background: url('demo.galeribukujakarta.com/img/<?=$r1['gambar']?>');background-size:cover;"></div>
                 <h3 class="desc">
@@ -55,20 +50,7 @@
                 <h3 style="font-family: '72 Condensed';" class="penulis">By <a href=""></a><?=$r1['penulis']?></h3>
                 <p style="font-family: 'Bell MT';"> <?= nl2br($r1['penjelasan']) ?></p>
             </div>
-            <?php 
-                        }
-                    } else {
-                        // Debug: Tampilkan pesan jika data tidak ditemukan
-                        echo "<p>Data tidak ditemukan untuk no_mostpopular = $id1.</p>";
-                    }
-
-                    // Menutup statement
-                    $stmt->close();
-                } else {
-                    // Debug: Tampilkan kesalahan jika statement tidak dapat dibuat
-                    echo "<p>Kesalahan pada statement: " . $k->error . "</p>";
-                }
-                ?>
+    
         </div>
         
         <div class="adv">
@@ -79,6 +61,8 @@
                 <h3 class="judul">MOST POPULAR</h3>
                 <!--5 content  -->
                 <?php
+                      }
+                    }
                     $sql = "SELECT * FROM tb_mostpopular ORDER BY no_mostpopular DESC LIMIT 7";
                     $q = mysqli_query($k, $sql);
                     while ($r = mysqli_fetch_assoc($q)) {
