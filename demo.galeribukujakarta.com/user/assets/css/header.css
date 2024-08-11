@@ -21,7 +21,7 @@ header {
 
 .scrolled {
   height: 70px;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 
@@ -258,6 +258,7 @@ header .container .toggle {
   display: none;
 }
 header .container .reNav {
+  flex-direction: column;
   display: none;
 }
 header .container .akun {
@@ -550,9 +551,10 @@ header .container .akun a:nth-child(2) {
     margin-left: 30px;
   }
   header .container .reNav {
+    flex-direction: column;
     position: fixed;
     height: calc(100vh - 55px);
-    width: 40%;
+    width: 100%;
     left: 0;
     bottom: 0;
     transition: 0.3s;
@@ -579,7 +581,6 @@ header .container .akun a:nth-child(2) {
     height: 30vh;
     justify-content: start;
     align-items: start;
-    flex-direction: column;
     list-style: none;
   }
   header .container .reNav .container ul h3 {
@@ -588,11 +589,12 @@ header .container .akun a:nth-child(2) {
     margin-bottom: 25px;
   }
   header .container .reNav .container ul li {
-    margin: 10px 20px 10px 0px;
-    padding: 10px 20px;
+    /* margin: 10px 20px 10px 0px; */
+    padding: 5px 0px;
     width: fit-content;
   }
   header .container .reNav .container ul li a {
+    font-size:15px;
     color: #c1c1c1;
     text-decoration: none;
   }
@@ -919,6 +921,7 @@ header .container .akun a:nth-child(2) {
     margin-left: 30px;
   }
   header .container .reNav {
+    flex-direction: column;
     position: fixed;
     height: calc(100% - 55px);
     width: 40%;
@@ -948,7 +951,6 @@ header .container .akun a:nth-child(2) {
     height: 30vh;
     justify-content: start;
     align-items: start;
-    flex-direction: column;
     list-style: none;
   }
   header .container .reNav .container ul h3 {
@@ -957,11 +959,12 @@ header .container .akun a:nth-child(2) {
     margin-bottom: 25px;
   }
   header .container .reNav .container ul li {
-    margin: 10px 20px 10px 0px;
-    padding: 10px 20px;
+    /* margin: 10px 20px 10px 0px; */
+    padding: 5px 0px;
     width: fit-content;
   }
   header .container .reNav .container ul li a {
+    font-size:15px;
     color: #c1c1c1;
     text-decoration: none;
   }
@@ -1290,9 +1293,10 @@ header .container .akun a:nth-child(2) {
     margin-left: 10px;
   }
   header .container .reNav {
+    flex-direction: column;
     position: fixed;
     height: calc(100% - 50px);
-    width: 40%;
+    width: 100%;
     left: 0;
     bottom: 0;
     transition: 0.3s;
@@ -1300,7 +1304,7 @@ header .container .akun a:nth-child(2) {
     z-index: -1;
     display: flex;
     justify-content: center;
-    align-items: end;
+    align-items: center;
     transform: translateX(-100%);
   }
   header .container .reNav .container {
@@ -1319,7 +1323,6 @@ header .container .akun a:nth-child(2) {
     height: 30vh;
     justify-content: start;
     align-items: start;
-    flex-direction: column;
     list-style: none;
   }
   header .container .reNav .container ul h3 {
@@ -1329,14 +1332,14 @@ header .container .akun a:nth-child(2) {
     font-size: 12px;
   }
   header .container .reNav .container ul li {
-    margin: 10px 20px 10px 0px;
-    padding: 10px 20px;
+    /* margin: 10px 20px 10px 0px; */
+    padding: 5px 0px;
     width: fit-content;
   }
   header .container .reNav .container ul li a {
+    font-size:15px;
     color: #c1c1c1;
     text-decoration: none;
-    font-size: 10px;
   }
   header .container .reNav .container ul li a i {
     margin-right: 10px;

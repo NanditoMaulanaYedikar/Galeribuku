@@ -1,9 +1,12 @@
 window.addEventListener('scroll', function() {
   const header = document.getElementById('header');
+  const reNav = document.querySelector('.reNav');
   if (window.scrollY > 0) {
       header.classList.add('scrolled');
-  } else {
-      header.classList.remove('scrolled');
+      reNav.style.height = `calc(100% - 69px)`;
+    } else {
+        header.classList.remove('scrolled');
+        reNav.style.height = `calc(100% - 50px)`;
   }
   });
 
